@@ -1,8 +1,8 @@
 function area() {
-    let length = parseInt($('#length').val());
-    let width = parseInt($('#width').val());
-    let area = length * width;
-    $("#answer").text("The area is: " + area);
+    let l = parseInt($('#length').val());
+    let w = parseInt($('#width').val());
+    let a = calculateArea(l, w);
+    $("#answer").text("The area is: " + a);
 }
 
 function perimeter() {
@@ -13,9 +13,9 @@ function perimeter() {
 }
 
 function volume() {
-    let length = parseInt($('#length').val());
-    let width = parseInt($('#width').val());
-    let height = parseInt($('#height').val());
-    let volume = length * width * height;
-    $("#answer").text(" The volume is: " + volume);
+    let l = parseInt($('#length').val());
+    let w = parseInt($('#width').val());
+    let h = parseInt($('#height').val());
+    let v = calculateVolume(l, w, h);;
+    $("#answer").text(" The volume is: " + v);
 }
