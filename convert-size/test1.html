@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
 </head>
+
 <body>
     <h1>Size Calculater</h1>
     <p>Use this to convert from your unit</p>
-    <input type="number" id="input" placeholder="Enter Input Number">
+    <input class="form-control" type="number" id="input" placeholder="Enter Input Number">
     <p>Type an input unit:</p>
-   <select id="inputUnit" required>
-       <option value="cm">cm</option>
-       <option value="m">m</option>
-       <option value="mm">mm</option>
-   </select>
+    <select class="form-control" id="inputUnit" required>
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="mm">mm</option>
+    </select>
     <p>Type an output unit:</p>
-    <select id="outputUnit" required>
+    <select id="outputUnit" class="form-control" required>
         <option value="cm">cm</option>
         <option value="m">m</option>
         <option value="mm">mm</option>
     </select>
     <p>Press This Button!!!!</p>
-    <button onclick="convert()">Convert!!!!</button>
-    <p id="outputNumber"></p>
+    <button class="btn btn-primary" onclick="convert()">Convert!!!!</button>
+    <div class="alert alert-success" id="outputNumber" role="alert">
+  Your awnser will appear here!
+</div>
+
     <script src="test1.js"></script>
     <script src="math.js"></script>
 </body>
+
 </html>
